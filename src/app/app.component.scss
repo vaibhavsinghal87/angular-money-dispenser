@@ -1,0 +1,64 @@
+h1 {
+    background-color: blue;
+    width: 100%;
+    color: white;
+    height: 100px;
+    margin-left: 0;
+}
+
+.content {
+    min-height: 200px;
+    background-color: #D3D3D3;
+    padding: 20px;
+
+    .left-pane {
+        width: 50%;
+        background-color: white;
+
+        h2 {
+            margin-top: 8px;
+        }
+
+        .header {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 100%;
+            margin-bottom: 10px;
+            text-align: right;
+            padding-right: 5px;
+        }
+
+        button {
+            width: 100%;
+            background-color: blue;
+            color: white;
+            margin-bottom: 20px;
+        }
+    }
+
+
+    .right-pane {
+        width: 50%;
+
+        .heading, .total {
+            font-weight: bold;
+        }
+
+    }
+}
+
+:host ::ng-deep .odd {
+    width: 50%;
+    float: left;
+    border-bottom: 1px solid grey;
+}
+
+:host ::ng-deep .even {
+    width: 50%;
+    float: left;
+    border-bottom: 1px solid grey;
+}
+

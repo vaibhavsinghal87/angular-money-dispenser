@@ -1,0 +1,19 @@
+<div class="app">
+  <h1 class="row align-items-center justify-content-center">ATM Money Dispenser</h1>
+
+  <div class="row content">
+    <div class="col-sm-6 left-pane">
+      <h2>Welcome to ATM</h2>
+      <span class="header">Enter the Amount</span>
+      <input [(ngModel)]="value" type="text" name="amount" placeholder="Enter numerical value">
+      <button class="btn btn-primary" (click)="calculate()">Get Money</button>
+    </div>
+    <div class="col-sm-6 right-pane">
+      <span class="heading">You will get following amount</span>
+      <div class="count-area" [innerHTML]="content"></div>
+      <span class="total">Total notes dispensed: {{ total }}</span>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
